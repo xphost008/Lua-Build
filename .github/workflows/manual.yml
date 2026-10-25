@@ -77,7 +77,7 @@ jobs:
       - name: Copy Lua Executable file to 'bin'
         if: ${{ ! startsWith(matrix.build.os, 'windows') }}
         run: |
-          cd lua-${{ input.lua-version }}
+          cd lua-${{ inputs.lua-version }}
           mkdir lua-${{ inputs.lua-version }}/bin
           mv src/lua bin/lua
           mv src/luac bin/luac
