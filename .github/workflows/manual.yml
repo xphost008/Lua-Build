@@ -41,7 +41,7 @@ jobs:
         if: ${{ startsWith(matrix.build.os, 'windows') }}
         uses: msys2/setup-msys2@v2
         with:
-          msystem: ${{ matrix.build.mingw-sys }}
+          msystem: ${{ matrix.build.msys2-sys }}
           install: >-
             mingw-w64-clang-aarch64-make
             mingw-w64-clang-aarch64-gcc-compat
