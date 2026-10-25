@@ -8,7 +8,7 @@ on:
         description: 请输入要构建的 Lua 版本
         require: true
 
-job:
+jobs:
   build:
     strategy:
       fail-fast: false
